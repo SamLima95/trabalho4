@@ -1,0 +1,99 @@
+body {
+    background-color: #ddd;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #444;
+    line-height: 1.5;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: rgb(140, 76, 8);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-field:focus {
+    border-color: rgb(140, 76, 8);
+}
+
+
+.input-field:valid {
+    border-color: green;
+}
+
+.input-field:invalid {
+    border-color: red;
+}
+
+.input-field:valid:after {
+    content: " ✓";
+    color: green;
+}
+
+.input-field:invalid:after {
+    content: " ✖";
+    color: red;
+}
+
+
+#submit-button {
+    background-color: rgb(140, 76, 8);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.input-field.success {
+    background-color: #e0ffe0; 
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+
+.input-field + .message {
+    display: none; 
+}
+
+.input-field:focus + .message {
+    display: block; 
+}
+
+a:hover {
+    color: rgb(140, 76, 8);
+}
+
+input:has(.input-field:valid) {
+    background-color: #e0ffe0; 
+}
+
+h2:is(h1, h2) {
+    color: rgb(140, 76, 8);
+}
+
+input:first-child {
+    border-color: blue; 
+}
+
+textarea:first-of-type {
+    border-color: purple; 
+}
